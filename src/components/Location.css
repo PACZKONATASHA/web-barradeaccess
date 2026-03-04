@@ -1,0 +1,163 @@
+/* Location Styles - Mobile First */
+.location {
+  padding: var(--spacing-2xl) 0; /* Menos padding en móvil */
+  background-color: var(--bg-cream);
+}
+
+.location .section__subtitle {
+  color: var(--color-accent);
+}
+
+.location__content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Mapa - Mobile base */
+.location__map-wrapper {
+  width: 100%;
+  border-radius: var(--border-radius-md); /* Menos radius en móvil */
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  border: 2px solid var(--color-accent); /* Borde más fino en móvil */
+  margin-bottom: var(--spacing-md);
+}
+
+.location__map {
+  width: 100%;
+  height: 220px; /* Más bajo en móvil */
+  border: 0;
+  display: block;
+}
+
+/* Info - Mobile base */
+.location__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  text-align: center;
+}
+
+.location__address {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background-color: var(--bg-light);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.location__icon {
+  font-size: 1.25rem;
+}
+
+.location__address-text {
+  font-family: var(--font-primary);
+  font-size: 1rem; /* Móvil */
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.location__address-detail {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Botón cómo llegar - Minimalista */
+.location__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  width: 100%;
+  padding: 0.65rem 1.5rem;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-accent);
+  border-radius: 0;
+  font-family: var(--font-secondary);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  touch-action: manipulation;
+}
+
+.location__btn:hover {
+  background-color: var(--color-accent);
+  color: var(--text-white);
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+  .location {
+    padding: var(--spacing-3xl) 0;
+  }
+  
+  .location__content {
+    max-width: 800px;
+  }
+  
+  .location__map-wrapper {
+    border-radius: var(--border-radius-lg);
+    border: 3px solid var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .location__map {
+    height: 350px;
+  }
+  
+  .location__info {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+  }
+  
+  .location__address {
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  .location__icon {
+    font-size: 1.5rem;
+  }
+  
+  .location__address-text {
+    font-size: 1.1rem;
+  }
+  
+  .location__address-detail {
+    font-size: 0.9rem;
+  }
+  
+  .location__btn {
+    width: auto;
+    gap: var(--spacing-xs);
+    padding: 0.75rem 2rem;
+    font-size: 0.7rem;
+  }
+  
+  .btn-icon {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .location__map {
+    height: 400px;
+  }
+}

@@ -1,7 +1,7 @@
 /* About Styles - Mobile First */
 .about {
   padding: var(--spacing-2xl) 0;
-  background-image: linear-gradient(rgba(10, 20, 60, 0.8), rgba(10, 20, 60, 0.8)), url('../assets/images/imagen-2.png');
+  background-image: linear-gradient(rgba(10, 20, 60, 0.8), rgba(10, 20, 60, 0.8)), url('../assets/images/formu-barras.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

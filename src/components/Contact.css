@@ -1,11 +1,11 @@
 /* Contact Styles - Mobile First */
 .contact {
-  padding: var(--spacing-2xl) 0; /* Menos padding en móvil */
+  padding: var(--spacing-2xl) 0;
   background-color: var(--bg-dark);
-  background-image: linear-gradient(rgba(44, 37, 32, 0.95), rgba(44, 37, 32, 0.95)),
-                    url('../assets/images/formu-barras.png');
+  background-image: linear-gradient(rgba(30, 25, 35, 0.8), rgba(30, 25, 35, 0.8)), url('../assets/images/imagen-2.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .contact .section__header {

@@ -1,7 +1,10 @@
 /* Location Styles - Mobile First */
 .location {
-  padding: var(--spacing-2xl) 0; /* Menos padding en móvil */
-  background-color: var(--bg-cream);
+  padding: var(--spacing-2xl) 0;
+  background-image: linear-gradient(rgba(30, 25, 35, 0.8), rgba(30, 25, 35, 0.8)), url('../assets/images/imagen-2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .location .section__subtitle {

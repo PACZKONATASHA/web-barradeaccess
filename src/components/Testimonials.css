@@ -1,7 +1,10 @@
 /* Testimonials Styles - Mobile First */
 .testimonials {
   padding: var(--spacing-2xl) 0;
-  background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-warm) 100%);
+  background-image: linear-gradient(rgba(30, 25, 35, 0.8), rgba(30, 25, 35, 0.8)), url('../assets/images/imagen-2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   overflow: hidden;
 }
 

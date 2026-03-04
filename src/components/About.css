@@ -1,7 +1,10 @@
 /* About Styles - Mobile First */
 .about {
   padding: var(--spacing-2xl) 0;
-  background-color: var(--bg-light);
+  background-image: linear-gradient(rgba(30, 25, 35, 0.8), rgba(30, 25, 35, 0.8)), url('../assets/images/imagen-2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   overflow: hidden;
 }
 

@@ -29,13 +29,14 @@
 .benefit__row {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-cream);
+  background-color: rgba(30, 25, 35, 0.9);
   border-radius: var(--border-radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out, box-shadow 0.3s ease;
+  border: 1px solid rgba(100, 150, 255, 0.3);
 }
 
 .benefit__row--visible {
@@ -128,7 +129,7 @@
   font-family: var(--font-primary);
   font-size: 1.35rem;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-primary);
+  color: #00D9FF;
   opacity: 0;
   transform: translateY(15px);
   transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;
@@ -141,7 +142,7 @@
 
 .benefit__text {
   font-size: 0.9rem;
-  color: var(--text-medium);
+  color: #FFFFFF;
   line-height: 1.7;
   margin-bottom: var(--spacing-sm);
   opacity: 0;

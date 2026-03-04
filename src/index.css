@@ -15,15 +15,15 @@
   --color-accent-light: #E8DCC8;
   
   /* Fondos */
-  --bg-light: #FAF8F5;
-  --bg-cream: #F5F0E8;
-  --bg-warm: #EDE4D8;
-  --bg-dark: #2C2520;
+  --bg-light: #2A2420;
+  --bg-cream: #3D3530;
+  --bg-warm: #4A4037;
+  --bg-dark: #1A1715;
   
   /* Textos */
-  --text-dark: #3D3530;
-  --text-medium: #6B5F55;
-  --text-light: #9B8F85;
+  --text-dark: #FAF8F5;
+  --text-medium: #D4C4B0;
+  --text-light: #A68B6A;
   --text-white: #FAF8F5;
   
   /* Tipografía */

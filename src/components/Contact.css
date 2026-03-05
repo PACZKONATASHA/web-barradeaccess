@@ -122,39 +122,39 @@ select.form__input {
   text-align: left;
 }
 
-/* Botón WhatsApp - Minimalista */
+/* Botón WhatsApp - Mejorado */
 .btn--whatsapp {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-xs);
+  gap: 0.5rem;
   width: 100%;
-  padding: 0.65rem 1.5rem;
+  padding: 0.9rem 1.7rem;
   margin-top: var(--spacing-md);
-  background-color: #8B4513; /* Brown color */
-  color: white;
+  background: linear-gradient(90deg, #8B4513 60%, #A0522D 100%);
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   font-family: var(--font-secondary);
-  font-size: 0.7rem;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(139, 69, 19, 0.15);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .btn--whatsapp:hover {
-  background-color: #A0522D; /* Slightly lighter brown */
-  transform: scale(1.05);
-  border-color: #A0522D;
-  color: white;
-  box-shadow: none;
+  background: linear-gradient(90deg, #A0522D 60%, #8B4513 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(139, 69, 19, 0.22);
 }
 
 .whatsapp-icon {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
 }
 
 /* Tablet (768px+) */

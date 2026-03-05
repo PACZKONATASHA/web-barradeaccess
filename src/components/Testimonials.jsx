@@ -1,5 +1,6 @@
 import './Testimonials.css'
-import imagenYoga from '../assets/images/profesora-yoga.png'
+import maria from '../assets/images/maria.png'
+import carlos from '../assets/images/carlos.png'
 import imagenContador from '../assets/images/tarjeta-contador.png'
 import imagenBarras from '../assets/images/imagen-barras.png'
 import { useEffect, useRef, useState } from 'react'
@@ -7,17 +8,17 @@ import { useEffect, useRef, useState } from 'react'
 const testimonialsData = [
   {
     id: 1,
-    image: imagenYoga,
+    image: maria,
     name: 'María García',
     role: 'Profesora de Yoga',
-    text: '"Desde la primera sesión sentí una paz que no había experimentado en años. Las Barras de Access me ayudaron a soltar cargas emocionales que venía arrastrando. Ahora duermo mejor y me siento más conectada conmigo misma."'
+    text: 'Nunca imaginé que una sesión pudiera traerme tanta paz. Sentí como si me quitaran un peso de encima y desde entonces duermo mejor y me siento más tranquila cada día.'
   },
   {
     id: 2,
-    image: imagenContador,
+    image: carlos,
     name: 'Carlos Méndez',
     role: 'Contador',
-    text: '"Era escéptico al principio, pero decidí probar. La claridad mental que obtuve después de las sesiones me ayudó a tomar decisiones importantes en mi trabajo. Mi nivel de estrés bajó notablemente."'
+    text: 'Al principio tenía dudas, pero después de la primera sesión noté mi mente más clara y menos estrés en el trabajo. Recomiendo esta experiencia a todos.'
   },
   {
     id: 3,

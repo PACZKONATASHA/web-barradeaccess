@@ -159,7 +159,7 @@
 .about__feature span {
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--color-accent);
 }
 
 /* Tablet (768px+) */

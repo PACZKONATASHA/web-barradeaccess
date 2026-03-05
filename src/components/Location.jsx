@@ -1,12 +1,12 @@
 import './Location.css';
 
 function Location() {
-  // Coordenadas de ejemplo - Buenos Aires
-  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895553!2d-58.38375908477032!3d-34.60373888045943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb7e8b4b8f%3A0x8b8b8b8b8b8b8b8b!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar";
+  // Coordenadas de Lanus Oeste, Hector Noya 3018
+  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.1234567890!2d-58.414444!3d-34.756667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7a7a7a7a7a7%3A0x0!2sH%C3%A9ctor%20Noya%203018%2C%20Lan%C3%BAs!5e0!3m2!1ses!2sar!4v1620000000000";
   
   const handleGetDirections = () => {
     // Abre Google Maps con la ubicación
-    window.open('https://www.google.com/maps/dir//Buenos+Aires,+Argentina', '_blank');
+    window.open('https://www.google.com/maps/dir//Hector+Noya+3018,+Lanus+Oeste,+Argentina', '_blank');
   };
 
   return (
@@ -33,8 +33,8 @@ function Location() {
             <div className="location__address">
               <div className="location__icon">📍</div>
               <div>
-                <p className="location__address-text">Buenos Aires, Argentina</p>
-                <p className="location__address-detail">Zona Palermo</p>
+                <p className="location__address-text">Lanus Oeste, Buenos Aires</p>
+                <p className="location__address-detail">Hector Noya 3018</p>
               </div>
             </div>
 

@@ -57,7 +57,7 @@
 .benefit__image-wrapper {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -212,7 +212,7 @@
   
   .benefit__image-wrapper {
     height: 100%;
-    min-height: 350px;
+    min-height: 300px;
   }
   
   .benefit__text-wrapper {

@@ -5,8 +5,14 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     date: '',
-    time: '',
+    time: '17:00',
     comments: ''
+  })
+
+  // Generar días impares de marzo
+  const oddDaysInMarch = Array.from({ length: 16 }, (_, i) => {
+    const day = (i * 2) + 1
+    return `2026-03-${String(day).padStart(2, '0')}`
   })
 
   const handleChange = (e) => {
@@ -25,8 +31,8 @@ function Contact() {
 *Hora preferida:* ${formData.time || 'No especificada'}
 *Comentarios:* ${formData.comments || 'Sin comentarios'}`;
 
-    // Número de WhatsApp (reemplazar con el número real)
-    const phoneNumber = '5491112345678';
+    // Número de WhatsApp
+    const phoneNumber = '541151404683';
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
@@ -39,6 +45,7 @@ function Contact() {
         <div className="section__header">
           <span className="section__subtitle">Agenda</span>
           <h2 className="section__title">Reserva tu Turno</h2>
+          <p className="section__description">Disponibilidad: Días impares de Marzo • 17:00 hs • 1 cupo disponible</p>
         </div>
         
         <div className="contact__form-wrapper">
@@ -64,28 +71,34 @@ function Contact() {
             
             <div className="form__group">
               <label htmlFor="date" className="form__label">Fecha preferida:</label>
-              <input 
-                type="date" 
-                id="date" 
-                name="date" 
-                className="form__input" 
+              <select
+                id="date"
+                name="date"
+                className="form__input"
                 value={formData.date}
                 onChange={handleChange}
                 required
-              />
+              >
+                <option value="">Selecciona un día</option>
+                {oddDaysInMarch.map(day => (
+                  <option key={day} value={day}>
+                    {new Date(day).toLocaleDateString('es-AR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+                  </option>
+                ))}
+              </select>
             </div>
             
             <div className="form__group">
-              <label htmlFor="time" className="form__label">Hora preferida:</label>
-              <input 
-                type="time" 
-                id="time" 
-                name="time" 
-                className="form__input" 
+              <label htmlFor="time" className="form__label">Hora:</label>
+              <select
+                id="time"
+                name="time"
+                className="form__input"
                 value={formData.time}
                 onChange={handleChange}
-                required
-              />
+              >
+                <option value="17:00">17:00 hs</option>
+              </select>
             </div>
             
             <div className="form__group">

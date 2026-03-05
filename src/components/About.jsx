@@ -27,11 +27,6 @@ function About() {
     <section className={`about ${isVisible ? 'about--visible' : ''}`} id="que-es" ref={sectionRef}>
       <div className="container">
         <div className="about__grid">
-          <div className="about__image">
-            <div className="about__image-glow"></div>
-            <img src={aboutImg} alt="Sesión de Barras de Access" loading="lazy" />
-            <div className="about__image-overlay"></div>
-          </div>
           <div className="about__content">
             <span className="section__subtitle">¿Qué es?</span>
             <h2 className="section__title">Barras de Access Consciousness</h2>
@@ -58,6 +53,11 @@ function About() {
                 <span>Transformador</span>
               </div>
             </div>
+          </div>
+          <div className="about__image">
+            <div className="about__image-glow"></div>
+            <img src={aboutImg} alt="Sesión de Barras de Access" loading="lazy" />
+            <div className="about__image-overlay"></div>
           </div>
         </div>
       </div>

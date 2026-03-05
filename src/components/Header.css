@@ -92,17 +92,13 @@
 
 .nav__menu.active {
   right: 0;
-}
-
 .nav__link {
   font-family: var(--font-primary);
   font-size: 1.5rem;
-  color: var(--text-dark);
+  color: var(--color-accent);
   position: relative;
   text-decoration: none;
 }
-
-.nav__link::after {
   content: '';
   position: absolute;
   bottom: -4px;

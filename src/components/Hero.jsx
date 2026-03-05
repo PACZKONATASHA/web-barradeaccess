@@ -85,7 +85,7 @@ function Hero() {
           Una técnica suave que libera las limitaciones de cuerpo y mente, 
           abriendo las puertas a la paz, la claridad y el bienestar profundo.
         </p>
-        <a href="#contacto" className="btn btn--primary" onClick={(e) => scrollTo(e, '#contacto')}>
+        <a href="#agenda" className="btn btn--primary" onClick={(e) => scrollTo(e, '#agenda')}>
           Agenda tu Sesión
         </a>
       </div>

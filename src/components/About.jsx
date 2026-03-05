@@ -1,5 +1,5 @@
 import './About.css'
-import aboutImg from '../assets/images/img-de-acces.png'
+import aboutImg from '../assets/images/barra-de-acces.png'
 import { useEffect, useRef, useState } from 'react'
 
 function About() {

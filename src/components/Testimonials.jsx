@@ -10,12 +10,12 @@ const testimonialsData = [
     image: comentarioMujer,
     name: 'María García',
     role: 'Profesora de Yoga',
-    text: 'Nunca imaginé que una sesión pudiera traerme tanta paz. Sentí como si me quitaran un peso de encima y desde entonces duermo mejor y me siento más tranquila cada día.'
+    text: 'Nunca imaginé que una sesión pudiera traerme tanta paz. Sentí como si me quitaran un peso de encima ahora duermo mejor y me siento más tranquila cada día.'
   },
   {
     id: 2,
     image: comentarioHombre,
-    name: 'Carlos Méndez',
+    name: 'Nicolás Méndez',
     role: 'Contador',
     text: 'Al principio tenía dudas, pero después de la primera sesión noté mi mente más clara y menos estrés en el trabajo. Recomiendo esta experiencia a todos.'
   },

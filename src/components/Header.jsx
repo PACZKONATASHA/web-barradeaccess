@@ -38,7 +38,7 @@ function Header() {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <nav className="nav container">
         <div className="nav__logo">
-          <span className="nav__logo-text">Barra de Acces</span>
+          <span className="nav__logo-text">Barras de Access</span>
         </div>
         
         <button 

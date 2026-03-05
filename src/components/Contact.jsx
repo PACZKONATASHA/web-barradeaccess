@@ -9,11 +9,38 @@ function Contact() {
     comments: ''
   })
 
-  // Generar días impares de marzo
-  const oddDaysInMarch = Array.from({ length: 16 }, (_, i) => {
-    const day = (i * 2) + 1
-    return `2026-03-${String(day).padStart(2, '0')}`
-  })
+  // Generate available days for odd and even months
+  const generateDays = (month, year, isOdd) => {
+    const daysInMonth = new Date(year, month, 0).getDate();
+    return Array.from({ length: daysInMonth }, (_, i) => i + 1)
+      .filter(day => (isOdd ? day % 2 !== 0 : day % 2 === 0))
+      .map(day => `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`);
+  };
+
+  const getAvailableDays = () => {
+    const year = 2026;
+    const months = [
+      { month: 1, isOdd: true },
+      { month: 2, isOdd: false },
+      { month: 3, isOdd: true },
+      { month: 4, isOdd: false },
+      { month: 5, isOdd: true },
+      { month: 6, isOdd: false },
+      { month: 7, isOdd: true },
+      { month: 8, isOdd: false },
+      { month: 9, isOdd: true },
+      { month: 10, isOdd: false },
+      { month: 11, isOdd: true },
+      { month: 12, isOdd: false },
+    ];
+
+    return months.reduce((acc, { month, isOdd }) => {
+      acc[month] = generateDays(month, year, isOdd);
+      return acc;
+    }, {});
+  };
+
+  const availableDays = getAvailableDays();
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -45,7 +72,7 @@ function Contact() {
         <div className="section__header">
           <span className="section__subtitle">Agenda</span>
           <h2 className="section__title">Reserva tu Turno</h2>
-          <p className="section__description">Disponibilidad: Días impares de Marzo • 17:00 hs • 1 cupo disponible</p>
+          <p className="section__description">Disponibilidad: 17:00 y 19:00 hs • 2 cupos disponibles</p>
         </div>
         
         <div className="contact__form-wrapper">
@@ -79,8 +106,8 @@ function Contact() {
                 onChange={handleChange}
                 required
               >
-                <option value="">Selecciona un día</option>
-                {oddDaysInMarch.map(day => (
+                <option value="">Selecciona un día de Marzo</option>
+                {availableDays[3]?.map(day => (
                   <option key={day} value={day}>
                     {new Date(day).toLocaleDateString('es-AR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
                   </option>
@@ -98,6 +125,7 @@ function Contact() {
                 onChange={handleChange}
               >
                 <option value="17:00">17:00 hs</option>
+                <option value="19:00">19:00 hs</option>
               </select>
             </div>
             

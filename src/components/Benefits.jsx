@@ -1,14 +1,14 @@
 import './Benefits.css'
-import imagen2 from '../assets/images/imagen-2.png'
+import pazMental from '../assets/images/paz-mental-relajacion.png'
 import imagen3 from '../assets/images/imagen-3.png'
-import imagenBarras from '../assets/images/imagen-barras.png'
-import imgAcces from '../assets/images/img-de-acces.png'
+import claridad from '../assets/images/claridad-mental.png'
+import bienestar from '../assets/images/bienestar-paz-integal.png'
 import { useEffect, useRef, useState } from 'react'
 
 const benefitsData = [
   {
     id: 1,
-    image: imagen2,
+    image: pazMental,
     title: 'Paz Mental y Relajación',
     text: 'Reduce significativamente el estrés, la ansiedad y el ruido mental constante. Las Barras de Access permiten que tu mente encuentre un espacio de calma profunda, liberando tensiones acumuladas.',
     highlight: 'Siente cómo la tranquilidad invade cada parte de tu ser.'
@@ -22,14 +22,14 @@ const benefitsData = [
   },
   {
     id: 3,
-    image: imagenBarras,
+    image: claridad,
     title: 'Claridad Mental y Creatividad',
     text: 'Al liberar las limitaciones almacenadas, tu mente se abre a nuevas posibilidades. La toma de decisiones se vuelve más fluida y las ideas creativas fluyen con mayor facilidad.',
     highlight: 'Descubre el potencial ilimitado de tu mente.'
   },
   {
     id: 4,
-    image: imgAcces,
+    image: bienestar,
     title: 'Bienestar Integral',
     text: 'Las Barras de Access promueven un equilibrio entre cuerpo, mente y espíritu. Notarás una mayor conexión contigo mismo y una perspectiva más positiva ante la vida.',
     highlight: 'Reconéctate con tu verdadera esencia.'

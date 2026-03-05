@@ -131,31 +131,30 @@ select.form__input {
   width: 100%;
   padding: 0.65rem 1.5rem;
   margin-top: var(--spacing-md);
-  background-color: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-accent);
-  border-radius: 0;
+  background-color: #8B4513; /* Brown color */
+  color: white;
+  border: none;
+  border-radius: 5px;
   font-family: var(--font-secondary);
   font-size: 0.7rem;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: var(--transition-normal);
-  touch-action: manipulation;
+  transition: all 0.3s ease;
 }
 
 .btn--whatsapp:hover {
-  background-color: #25D366;
-  border-color: #25D366;
+  background-color: #A0522D; /* Slightly lighter brown */
+  transform: scale(1.05);
+  border-color: #A0522D;
   color: white;
-  transform: none;
   box-shadow: none;
 }
 
 .whatsapp-icon {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Tablet (768px+) */

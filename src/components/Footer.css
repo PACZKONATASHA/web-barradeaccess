@@ -2,8 +2,27 @@
 .footer {
   background-color: var(--bg-dark);
   color: var(--text-white);
-  padding: var(--spacing-2xl) 0 var(--spacing-lg); /* Menos padding en móvil */
+  padding: var(--spacing-2xl) 0 var(--spacing-lg);
   text-align: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 1;
 }
 
 /* Frase motivacional - Mobile base */
@@ -13,10 +32,12 @@
 
 .footer__quote-text {
   font-family: var(--font-primary);
-  font-size: 1.1rem; /* Móvil */
+  font-size: 1.2rem; /* Móvil */
   font-style: italic;
+  font-weight: bold;
   line-height: 1.5;
-  color: var(--text-white);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   margin-bottom: var(--spacing-xs);
   padding: 0 var(--spacing-xs);
 }

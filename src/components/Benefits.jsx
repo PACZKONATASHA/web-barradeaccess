@@ -1,5 +1,5 @@
 import './Benefits.css'
-import pazMental from '../assets/images/paz-mental-relajacion.png'
+import paz from '../assets/images/paz.png'
 import imagen3 from '../assets/images/imagen-3.png'
 import claridad from '../assets/images/claridad-mental.png'
 import bienestar from '../assets/images/bienestar-paz-integal.png'
@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from 'react'
 const benefitsData = [
   {
     id: 1,
-    image: pazMental,
+    image: paz,
     title: 'Paz Mental y Relajación',
     text: 'Reduce significativamente el estrés, la ansiedad y el ruido mental constante. Las Barras de Access permiten que tu mente encuentre un espacio de calma profunda, liberando tensiones acumuladas.',
     highlight: 'Siente cómo la tranquilidad invade cada parte de tu ser.'

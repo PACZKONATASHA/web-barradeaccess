@@ -10,9 +10,7 @@ function Contact() {
   })
 
   // Generar solo días impares de marzo 2026
-  const oddMarchDays = Array.from({ length: 31 }, (_, i) => i + 1)
-    .filter(day => day % 2 !== 0)
-    .map(day => `2026-03-${String(day).padStart(2, '0')}`);
+  const oddMarchDays = [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31].map(day => `2026-03-${String(day).padStart(2, '0')}`);
 
   const handleChange = (e) => {
     const { name, value } = e.target

@@ -42,7 +42,7 @@ function Contact() {
         <div className="section__header">
           <span className="section__subtitle">Agenda</span>
           <h2 className="section__title">Reserva tu Turno</h2>
-          <p className="section__description">Disponibilidad: 17:00 y 19:00 hs • 2 cupos disponibles</p>
+          <p className="section__description">Disponibilidad: Lunes a Sábados • 17:00 y 19:00 hs • 2 cupos disponibles</p>
         </div>
         <div className="contact__form-wrapper">
           <div className="contact__form-header">
@@ -74,11 +74,15 @@ function Contact() {
                 required
               >
                 <option value="">Selecciona un día de Marzo</option>
-                {oddMarchDays.map(day => (
-                  <option key={day} value={day}>
-                    {new Date(day).toLocaleDateString('es-AR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
-                  </option>
-                ))}
+                {oddMarchDays.map(day => {
+                  const [year, month, dayStr] = day.split('-');
+                  const dateObj = new Date(parseInt(year), parseInt(month) - 1, parseInt(dayStr));
+                  return (
+                    <option key={day} value={day}>
+                      {dateObj.toLocaleDateString('es-AR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+                    </option>
+                  );
+                })}
               </select>
             </div>
             <div className="form__group">

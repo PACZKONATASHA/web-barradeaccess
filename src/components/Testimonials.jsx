@@ -1,21 +1,20 @@
 import './Testimonials.css'
-import maria from '../assets/images/maria.png'
-import carlos from '../assets/images/carlos.png'
-import imagenContador from '../assets/images/tarjeta-contador.png'
+import comentarioMujer from '../assets/images/comentario-mujer.png'
+import comentarioHombre from '../assets/images/comentario-hombre.png'
 import imagenBarras from '../assets/images/imagen-barras.png'
 import { useEffect, useRef, useState } from 'react'
 
 const testimonialsData = [
   {
     id: 1,
-    image: maria,
+    image: comentarioMujer,
     name: 'María García',
     role: 'Profesora de Yoga',
     text: 'Nunca imaginé que una sesión pudiera traerme tanta paz. Sentí como si me quitaran un peso de encima y desde entonces duermo mejor y me siento más tranquila cada día.'
   },
   {
     id: 2,
-    image: carlos,
+    image: comentarioHombre,
     name: 'Carlos Méndez',
     role: 'Contador',
     text: 'Al principio tenía dudas, pero después de la primera sesión noté mi mente más clara y menos estrés en el trabajo. Recomiendo esta experiencia a todos.'

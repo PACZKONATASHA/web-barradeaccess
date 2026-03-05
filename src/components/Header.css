@@ -92,6 +92,12 @@
 
 .nav__menu.active {
   right: 0;
+}
+
+.nav__item {
+  list-style: none;
+}
+
 .nav__link {
   font-family: var(--font-primary);
   font-size: 1.5rem;
@@ -99,6 +105,8 @@
   position: relative;
   text-decoration: none;
 }
+
+.nav__link::after {
   content: '';
   position: absolute;
   bottom: -4px;

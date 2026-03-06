@@ -1,5 +1,5 @@
 import './Testimonials.css'
-import comentarioMujer from '../assets/images/comentario-mujer.png'
+import profrMeli from '../assets/images/profe-meli.jpg'
 import comentarioHombre from '../assets/images/comentario-hombre.png'
 import imagenBarras from '../assets/images/imagen-barras.png'
 import { useEffect, useRef, useState } from 'react'
@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 const testimonialsData = [
   {
     id: 1,
-    image: comentarioMujer,
+    image: profrMeli,
     name: 'María García',
     role: 'Profesora de Yoga',
     text: 'Nunca imaginé que una sesión pudiera traerme tanta paz. Sentí como si me quitaran un peso de encima ahora duermo mejor y me siento más tranquila cada día.'
